@@ -261,3 +261,49 @@
 // }
 // fizzBuzz();
 
+// VerificadorVelocidade
+// VelocidadeMax até 70
+// Cada 5km acima do limite, ganha um ponto na carteira
+// Use o Math.Floor() para arrendondar os valores
+// Caso pontos maior que 12 -> "Carteira suspensa"
+// function verificadorVelocidade(Velocidade){
+//    let pontos = Math.floor((Velocidade - 70)/5);
+//    if( pontos <= 0){
+//       console.log("Não há pontos na carteira")
+//    }else if(pontos > 0 && pontos < 12){
+//       console.log("Há"+" "+ pontos+" "+"pontos na carteira")
+//    }else{
+//       console.log("Carteira suspensa");
+//    }
+// }
+// verificadorVelocidade(120);
+
+// Impar ou par
+// Indica quantos número vão ser lidos de 0 a x 
+// função exibe o valor e se é par ou impar
+// function imparOuPar(valor){
+//    for(let i = 0; i <= valor; i++){
+//       if( i % 2 == 0){
+//          console.log(i+" "+"Par")
+//       }else{
+//          console.log(i+" "+"Impar")
+//       }
+//    }
+// }
+// imparOuPar(10);
+
+// Criar um metódo para ler propriedades de um objeto e exibir soemente as propriedades do mtipo string que estão no objeto
+// const film = {
+//    titulo: "Vingadores",
+//    ano: 2018,
+//    diretor: "Roberto",
+//    personagem: "Thor"
+// }
+// function exibirPropridades(obj){
+//    for(let i in obj){
+//       if(typeof obj[i] == typeof "String"){
+//          console.log(obj[i]);
+//       }
+//    }
+// }
+// exibirPropridades(film);
