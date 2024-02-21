@@ -373,3 +373,78 @@
 //    }
 // }
 // primos(12);
+
+// Funcções de fábrica/Factory fuction
+//  function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria){
+//    return {
+//       marcaCelular,
+//       tamanhoTela,
+//       capacidadeBateria,
+//       ligar(){
+//          console.log("Fazendo ligamento...")
+//       }
+//    }
+//  }
+//  const celular1 =  criarCelular("iphone", 6.5, 5000);
+//  console.log(celular1)
+
+// Função de construtor/Constructor functions
+//  function Celular(marcaCelular, tamanhoTela, capacidadeBateria){
+//    this.marcaCelular = marcaCelular;
+//    this.tamanhoTela = tamanhoTela;
+//    this.capacidadeBateria = capacidadeBateria
+//    this.ligar = function(){
+//       console.log("Fazendo ligamento...")
+//    }
+// }
+// const celular = new Celular("iphone", 5,5, 5000);
+// console.log(celular)
+
+// O Constructor functions e o Factory fuction fazem a mesma coisa, o que diferencia é o modo de fazer (Não há diferença na prática)
+
+// Javascript dinâmico
+// const mouse = {
+//    cor: "black",
+//    marca: "Razer"
+// }
+// mouse.velocidade = 5000;
+// mouse.trocarDPI = function(){
+//    console.log("Mudando DPI...")
+// }
+// delete mouse.velocidade;
+// delete mouse.trocarDPI;
+// console.log(mouse);
+
+// Clonar objetos 
+// Assign
+// const celular = {
+//    marcaCelular: "Iphone",
+//    tamanhoTela:{
+//       vertical: 155,
+//       horizontal: 75
+//    },
+//    ligar : function(){
+//       console.log("Fazendo o ligamento...")
+//    }
+// }
+// const novoObjeto = Object.assign({/*Podemos adicionar mais métodos aqui*/ bateria: 5000}, celular);
+// console.log(novoObjeto);
+// {...}
+// const objeto2 = {...celular};
+// console.log(objeto2);
+
+// Vendo mais sobre o método Math
+
+// Tipos de String 
+// Tipo primitivo
+// const mensagem = "Minha primeira mensagem";
+// Tipo objeto
+// const outraMensagem = new String("Bom dia");
+// Vendo algumas funções de string
+// console.log(outraMensagem.length)
+// console.log(outraMensagem[2])
+// console.log(mensagem.includes("primeira"))
+// console.log(mensagem.indexOf("primeira"))
+// console.log(mensagem.replace("Minha", "sua"))
+// console.log(mensagem.trim())
+// console.log(mensagem.split(" "))
