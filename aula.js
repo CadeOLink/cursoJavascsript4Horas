@@ -307,3 +307,69 @@
 //    }
 // }
 // exibirPropridades(film);
+
+// Criar uma função que some uma sequencia de numeros apenas multiplos de 3 e 5
+// function somar(valor){
+//    let cont = 0;
+//    for(let i = 0; i <= valor; i++){
+//       if( i % 3 == 0 || i % 5 == 0){
+//          cont += i;
+//       }
+//    }
+//    console.log(cont);
+// }
+// somar(10);
+
+// Exercicio nota escolar
+// Onter a media a partir de um array
+// 0-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
+// const array = [90,90,90];
+// function media(Array){
+//    let cont = 0;
+//    for(let i in array){
+//       cont += array[i];
+//    }
+//    let valorMedia = Math.floor(cont / Array.length);
+//    if(valorMedia >= 0 && valorMedia <= 59){
+//       console.log(valorMedia+ " F")
+//    }else if(valorMedia > 59 && valorMedia <= 69){
+//       console.log(valorMedia+ " D")
+//    }else if(valorMedia > 69 && valorMedia <= 79){
+//       console.log(valorMedia+ " C")
+//    }else if(valorMedia > 79 && valorMedia <= 89){
+//       console.log(valorMedia+ " B")
+//    }else if(valorMedia > 89 && valorMedia <= 100){
+//       console.log(valorMedia+ " A")
+//    }else{
+//       console.log("Erro")
+//    }
+// }
+// media(array);
+
+// Criar uma função que exibe a quantidade de * que aquela linha possui
+// function exibirAsteriscos(linhas){
+//    let asterisco = "*";
+//    for(let i = 0; i <= linhas; i++){
+//       console.log("");
+//       for(let o = 0; o <= i; o++){
+//          console.log(asterisco);
+//       }
+//    }
+// }
+// exibirAsteriscos(12);
+
+// Função que exiba os números primos
+// function primos(limite){
+//    for(let i = 0; i <= limite; i++){
+//       if( i == 2 || i == 3){
+//          console.log(i)
+//       }else if( i % 3 != 0 && i % 2 != 0){
+//          console.log(i);
+//       }
+//    }
+// }
+// primos(12);
