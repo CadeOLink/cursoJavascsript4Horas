@@ -448,3 +448,92 @@
 // console.log(mensagem.replace("Minha", "sua"))
 // console.log(mensagem.trim())
 // console.log(mensagem.split(" "))
+
+// Template literal
+// const Mensagem = "Oi, essa é minha "primeira" mensagem";
+// console.log(Mensagem);
+// Objeto {}
+// Boolean true,false
+// String "",''
+// Template ``
+// const OutraMensagem = `Essa é outra mensagem de 
+// "teste" e 'maior'
+
+// Podem haver esse "Enter's" que não terá erro, como no "" ou ''`
+// console.log(OutraMensagem)
+// const amigo = "Rafael";
+// const OutraMensagem2 = `Meu nome é Everton e sou amigo do ${amigo}`;
+// console.log(OutraMensagem2)
+// no ${} podemos colocar funções, variáveis e outros métodos
+
+// Date / Datas
+// const data1 = new Date();
+// console.log(data1);
+// const data2 = new Date("March 06 2019 09:30");
+// console.log(data2);
+// const  data3 = new Date(2019, 02, 06, 09, 30);
+// console.log(data3)
+// data3.setFullYear(2030);
+// console.log(data3)
+
+// Montador de Endereço
+// Criar um onjeto endereço que contém:
+// Rua, Cidade, Cep, Fuction exibir endereço
+// const endereco = {
+//    rua:'a',
+//    cidade:'b',
+//    cep: 'c'
+//       }
+// function ExibirEndereco(endereco){
+//    for(let i in endereco){
+//       console.log(i, endereco[i]);
+//    }
+// }
+// ExibirEndereco(endereco);
+
+// Igualdade de Objetos
+// function endereco(rua, cidade, cep){
+//    this.rua = rua,
+//    this.cidade = cidade,
+//    this.cep = cep
+// }
+// const endereco1 = new endereco('a',1,'c');
+// const endereco2 = new endereco(3,2,'c');
+// function SaoIguais(endereco1, endereco2){
+//    for(let i in endereco1){
+//       if( endereco1[i] == endereco2[i]){
+//          console.log(endereco1[i]+"=="+endereco2[i])
+//       }else if( endereco1[i] != endereco2[i]){
+//          console.log(endereco1[i]+"!="+endereco2[i])
+//       }
+//       if( typeof endereco1[i] === typeof endereco2[i]){
+//          console.log(endereco1[i]+"==="+endereco2[i]);
+//       }else if( typeof endereco1[i] !== typeof endereco2[i]){
+//          console.log(endereco1[i]+"!=="+endereco2[i]);
+//       }
+//    }
+// }
+// SaoIguais(endereco1, endereco2)
+
+// Criar um objeto postagem
+// titulo, mensagem, autor, vizualiações, array de comentários, estaaovivo
+// function postagem(titulo,mensagem,autor,vizualiacoes,[autorComentario, resposta],estaaovivo){
+//    this.autor = autor,
+//    this.mensagem = mensagem,
+//    this.titulo = titulo,
+//    this.vizualiacoes = vizualiacoes
+//    this.comentarios = [{autor:autorComentario, texto:resposta}],
+//    this.estaaovivo = estaaovivo
+// }
+// let postagem1 = new postagem("a",'b','c',1,["everton", "verdade"],true);
+// console.log(postagem1)
+
+// Arrays
+// Add novos elementos
+// Encontrar elementos
+// Remover elementos
+// Dividir elementos
+// Dividir arrays
+// Combinar arrays
+
+// adicionado elementos em arrays
