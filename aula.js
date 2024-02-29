@@ -537,3 +537,125 @@
 // Combinar arrays
 
 // adicionado elementos em arrays
+// const numeros = [1,2,3];
+// inicio
+// numeros.unshift(0);
+// console.log(numeros);
+// meio
+// numeros.splice(1,0,0.5);
+// console.log(numeros);
+// final
+// numeros.push(4);
+// console.log(numeros);
+
+// encontrando elementos dentro de um array
+// const numeros = [1,2,3,4,1];
+// console.log(numeros.indexOf(2))
+// console.log(numeros.indexOf(5))
+// console.log(numeros.lastIndexOf(1))
+// console.log(numeros.includes(2) != -1)
+// console.log(numeros.includes(2))
+
+// encontrando elementos dentro de um array mas tipo referencia
+// const marcas = [
+//    {id:1 , nome:'a'},
+//    {id:2 , nome:'b'},
+//    {id:3 , nome:'c'}
+// ]
+// console.log(marcas.find(function(marca){
+//    return marca.nome == 'a'
+// }))
+
+// Arrow functions
+//  const marcas = [
+//     {id:1 , nome:'a'},
+//     {id:2 , nome:'b'},
+//     {id:3 , nome:'c'}
+//  ]
+//  console.log(marcas.find(marca => marca.nome == 'a'))
+
+// Removendo elementos de arrays
+// const numeros = [1,2,3,4,5,6];
+// final
+// console.log(numeros.pop())
+// console.log(numeros)
+// inicio
+// console.log(numeros.shift())
+// console.log(numeros)
+// meio
+// console.log(numeros.splice(2,1))
+// console.log(numeros)
+
+// Esvaziando arrays
+// const numeros = [1,2,3,4,5,6];
+// 1* caso
+// numeros = []; // somente se o array for variavel ( Não sendo constante )
+// 2* caso
+// numeros.length = 0;
+// console.log(numeros);
+// 3* caso
+// numeros.splice(0,numeros.length);
+// console.log(numeros);
+// 4* caso
+// for(let i = 0; i = numeros.length; i++){
+//    numeros.pop();
+// }
+// console.log(numeros);
+
+// Combinando arrays ou dividi arrays
+// const primeiro = [1,2,3];
+// const segundo = [4,5,6];
+// combinar
+// console.log(primeiro.concat(segundo));
+// dividir
+// console.log(primeiro.slice(1));
+
+// Operador Spread
+// const primeiro = [1,2,3];
+// const segundo = [4,5,6];
+// console.log([...primeiro,"beterraba",...segundo]);
+// const copia = [...primeiro,"Segundo",...segundo];
+// console.log(copia);
+
+// Foreach
+// const numeros = [1,2,3,4,5,6]
+// numeros.forEach((numero,i) => console.log(numero,i))
+// é a mesma coisa que forOf
+
+// Combinando array
+// const numeros = [1,2,3,4,5,6];
+// console.log(numeros.join("="));
+// const frase = "Olá mundo!!!";
+// console.log(frase.split(' '));
+// console.log(frase.split(' ').join('-'));
+
+// Recendo dados (input)
+// let msg = prompt("Manda msg corno");
+// if(msg != 0){
+//    alert(msg+" Igual a paolaIsso")
+// }
+
+// Fazer um prompt e uma condicional retornando se a pessoa é menor ou maior de idade
+// const Idade = Number(prompt("Qual a sua idade?"));
+// if( Idade <= 17){
+//    console.log(`Você tem ${Idade} anos, logo é menor de idade`)
+// }else if( Idade > 17){
+//    console.log(`Você tem ${Idade} anos, logo é maior de idade`)
+// }
+
+// Manipulação com DOM
+// Desafio de segurança virtual
+// let NomeDoConvidado, NomeDeQuemConvidou, Pesquisando;
+// function FestaVip(){
+//    NomeDoConvidado = document.getElementById("nome").value;
+//    NomeDeQuemConvidou = document.getElementById("convidou").value;
+//    Pesquisando = document.getElementById("esperando");
+//    const convidados = ['Everton', 'Roberto', 'Amanda', 'Valquíria', 'Evelyn']
+//    if(convidados.includes(NomeDoConvidado)){
+//       Pesquisando.innerHTML = ("Pode entrar")
+//    }else{
+//       Pesquisando.innerHTML = ("Não pode entrar")
+//    }
+// }
+
+// Termino do Curso, parabéns Everton
