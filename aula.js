@@ -659,3 +659,102 @@
 // }
 
 // Termino do Curso, parabéns Everton
+
+// Acrescimo, curso de ES6 
+//Link:https://youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi&si=4sBarSz06efr3zE7
+
+// prototipagem (Criar métodos para prototipos)
+// function Animal(raca, som){
+//    this.raca = raca;
+//    this.som = som;
+// }
+// const Cachorro = new Animal("Pitbull", "Auau");
+// const Gato = new Animal("Egpcio", "meaw");
+// Animal.prototype.hello = function(){
+//    console.log(`${this.som}, eu sou um ${this.raca}`)
+// }
+/* Feito com o Animal, o prototype, logo somente ele pode usar o metodo criado */
+
+// Promises 
+   // var defer = new Promise((resolve, reject) => {
+   //    if(true){
+   //       resolve(`Hello! it works!`)
+   //    }else{
+   //       reject(`Error!`)
+   //    }
+   //    })
+   //    defer.then((data) => {
+   //       console.log(data);
+   //       return `foo`;
+   //    }) .then((data) => console.log(data))
+   //       .catch((err) => console.log(err))
+
+   // Aplicação de múltiplas Promises   
+   // const currency = new Promise((resolve, reject) => {
+   //    setTimeout(() => {
+   //       resolve({ currency: 'euro', value: 3.50})
+   //    }, 2000);
+   // })
+   // const countries = new Promise((resolve, reject) => {
+   //    resolve(['Irlamd', 'Engaland', 'Scotland']);
+   // })
+   // Promise
+   //    .all([currency, countries])
+   //    .then(x => console.log(x))
+/* Este ocorrerá primeiro o race, pois, ele executará apenas o primeiro */ 
+   // Promise 
+   //    .race([currency, countries])
+   //    .then(x => console.log(x))
+
+   // Classes em Javascript
+   // class Animal {
+   //    // Tem que haver o método construtor 
+   //    constructor(raca, som){
+   //       this.raca = raca;
+   //       this.som = som;
+   //    }
+
+   //    hello(){
+   //       console.log(`${this.som}, eu sou um ${this.raca}`)
+   //    }
+   //    // Faz com que apenas a class possa usar esse método
+   //    static info(){
+   //       console.log(`This's a class to create animals`)
+   //    }
+   //    // é um método que funciona a partir de dados já inseridos 
+   //    get name(){
+   //       console.log(`${this.som}, sou um ${this.raca} e me chamo jake`)
+   //    }
+   //    // é um método que funciona a partir de dados que serão inseridos 
+   //    set nickname(x){
+   //       this.x = x;
+   //    }
+   // }
+   // const dog = new Animal("Cachorro", "Auau");
+   // const cat = new Animal("Gato", "Miauuuuu");
+
+   // Extensão de classes (Ou subclasses)
+   //    class Animal{
+   //       constructor(name){
+   //          this.name = name;
+   //       }
+
+   //       hello(){
+   //          console.log(`I'm ${this.name}`);
+   //       }
+   //    }
+
+   //    //Subclasse
+   //    class Dog extends Animal{
+   //       constructor(name,som){
+   //          super(name); //Utiliza-se o super para trazer outras var de outras classes para subclasses
+   //          this.som = som;
+   //       }
+
+   //       bark(){
+   //          console.log(`${this.som}, i'm ${this.name}`);
+   //       }
+   //    }
+
+   // const elefante = new Animal("Dumbo");
+   // const Cachorro = new Dog("Jake", "Auau");
