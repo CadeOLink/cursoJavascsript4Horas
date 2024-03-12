@@ -708,7 +708,7 @@
 
    // Classes em Javascript
    // class Animal {
-   //    // Tem que haver o método construtor 
+   // Tem que haver o método construtor 
    //    constructor(raca, som){
    //       this.raca = raca;
    //       this.som = som;
@@ -717,15 +717,15 @@
    //    hello(){
    //       console.log(`${this.som}, eu sou um ${this.raca}`)
    //    }
-   //    // Faz com que apenas a class possa usar esse método
+   // Faz com que apenas a class possa usar esse método
    //    static info(){
    //       console.log(`This's a class to create animals`)
    //    }
-   //    // é um método que funciona a partir de dados já inseridos 
+   // é um método que funciona a partir de dados já inseridos 
    //    get name(){
    //       console.log(`${this.som}, sou um ${this.raca} e me chamo jake`)
    //    }
-   //    // é um método que funciona a partir de dados que serão inseridos 
+   // é um método que funciona a partir de dados que serão inseridos 
    //    set nickname(x){
    //       this.x = x;
    //    }
@@ -744,7 +744,7 @@
    //       }
    //    }
 
-   //    //Subclasse
+   //Subclasse
    //    class Dog extends Animal{
    //       constructor(name,som){
    //          super(name); //Utiliza-se o super para trazer outras var de outras classes para subclasses
@@ -758,3 +758,85 @@
 
    // const elefante = new Animal("Dumbo");
    // const Cachorro = new Dog("Jake", "Auau");
+
+   // Symbol
+   // let foo = Symbol("name");
+   // let bar = Symbol("name");
+   // console.log(foo === bar);
+   // console.log(foo == bar);
+   // const obj = {
+   //    [Symbol('name')]: "Everton",
+   //    [Symbol('idade')]: 21,
+   //    cidade: "Imperatriz"
+   // }
+   // console.log(Object.keys(obj));
+   // const symbols = Object.getOwnPropertySymbols(obj);
+   // const data = symbols.map(sym => obj[sym])
+   // console.log(data);
+
+   // Generators // uma função normal, porém continua após o return( yield ) mas tem que ser chamado com .next
+   // function* GenNames (){
+   //    console.log("Primeiro Olá");
+   //    yield 'Everton'; // Yield é um return, porém pode ser adicionado mais elementos nas próximas linhas e chamar que executará 
+   //    console.log("Segundo Olá")
+   //    yield 'Valquiria';
+   //    console.log("Terceiro Olá");
+   //    yield 'Evelyn';
+   // }
+   // const names = GenNames();
+   // for(gen of names){
+   //    console.log(names.next())
+   // }
+   // console.log(names.next())
+   // console.log(names.next())
+   // console.log(names.next())
+   // console.log(names.next())
+
+   // Proxy ( VEJA MAIS SOBRE PROXY, É MUITO IMPORTANTE )
+   // let obj = {
+   //    name: 'Everton',
+   //    idade: 21
+   // }
+   // let proxy = new Proxy(obj, {
+   //    get(target, name){
+   //       console.log(`Alguém está pedindo o nome`);
+   //       return target[name];
+   //    },
+   //    set(target, name, value){
+   //       console.log(`Alguém está mudando o nome`);
+   //       target[name] = value;
+   //    }
+   // })
+
+   // Set
+   // let MySet = new Set([`Everton`, `Sávio`, `Evelyn`])
+   // MySet.add(`Valquiria`);
+   // MySet.add(`Valquiria`); // Ele não adicona repetidos
+   // MySet.delete(`Everton`);
+   // console.log(MySet.has(`Everton`));
+   // console.log(MySet.has(`Sávio`));
+   // console.log(MySet[1]); // Não se usa índicies como array em Set
+   // const  NewMySet = MySet.values();
+   // for( names of NewMySet){
+   //    console.log(names)
+   // }
+
+   // WeakSet
+   // Muito similar ao Set, diferente do set, ele apenas pegar objetos e não conseguimos ver os valores, mudar os valores e se há algo dentro dos objetos
+   // let obj1 = {
+   //    name:"Everton",
+   //    idade: 21
+   // }
+   // let obj2 = {
+   //    name:"Evelyb",
+   //    idade:17
+   // }
+   // let ws = new WeakSet([obj1,obj2])
+
+   // Map 
+   // Identico ao set
+   // let m = new Map();
+   // m.set(`Eveton`, 21);
+   // m.set(`Evelyn`, 17)
+   // m.set(`Sávio`, 20)
+
