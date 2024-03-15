@@ -828,7 +828,7 @@
    //    idade: 21
    // }
    // let obj2 = {
-   //    name:"Evelyb",
+   //    name:"Evelyn",
    //    idade:17
    // }
    // let ws = new WeakSet([obj1,obj2])
@@ -840,3 +840,44 @@
    // m.set(`Evelyn`, 17)
    // m.set(`Sávio`, 20)
 
+   // async/await
+   //    async function getPosts(){
+   //       try{
+   //       const response = await fetch('https://api.github.com/users/CadeOLink')
+   //       const post = await response.json();
+   //       post.map(data => {console.log(post.title)});
+   //    }
+   //    catch(err){ //catch é o responsavel por detectar os erros
+   //       console.log(err)
+   //    }
+   // }
+   //    getPosts();
+
+   // async function git(){
+   //    const everton = fetch('https://api.github.com/users/CadeOLink').then(r => r.json());
+
+   //    const promises = await Promise.all([everton]);
+   //    console.log(promises)
+   // }
+   // git();
+
+   // object.entries
+   // const animals = {
+   //    camelo: 2,
+   //    cavalo: 1,
+   //    macaco: 4
+   // };
+   // const animalsMap = new Map(Object.entries(animals));
+   // console.log(animalsMap.size);
+   // console.log(animalsMap.has('cavalo'));
+   // console.log(animalsMap.get('camelo'));
+
+   // obect.values
+   // const animals = {
+   //    camelo: 2,
+   //    cavalo: 1,
+   //    macaco: 4
+   // };
+   // console.log(Object.values(animals))
+
+   // Fim do curso, parabéns Everton
