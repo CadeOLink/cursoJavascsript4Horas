@@ -881,3 +881,66 @@
    // console.log(Object.values(animals))
 
    // Fim do curso, parabéns Everton
+
+   // Vidéo de produtividade de ES6, ES7 e ES8
+   // link: https://www.youtube.com/watch?v=VwAYyXZk5as
+
+   // Destruturização 
+   /* Com objeto */
+   // const endereco = {
+   //    rua: `R. Henrique Dias`,
+   //    numero: 1397,
+   //    uf_cidade:{
+   //       uf:`MA`,
+   //       cidade:`Imperatriz`
+   //    }
+   // }
+   // Conceito básico
+   // const rua = endereco.rua;
+   // const numero = endereco.numero;
+   // const uf = endereco.uf_cidade.uf;
+   // const cidade = endereco.uf_cidade.cidade;
+
+   // Conceito mais dinâmico
+   // const {rua, numero, uf_cidade:{ uf, cidade}} = endereco;
+   // console.log(rua, numero, uf, cidade)
+
+   /* Com Array */
+   // const array = [1,2,3,4];
+   // const [a,b,c] = array;
+   // console.log(a,b,c);
+
+   // Rest Operation (...)
+
+   // Buscando o resto das coisas
+   // const array = [1,2,3,4,5]
+   // const [a,b, ...c] = array
+   // console.log(c)
+
+   // Copiando uma estrutura 
+   // const css = { fontSize: 12px, color: `#FFF`};
+   // const tituloCss = {
+   //    fontWeigth: 'bold',
+   //    ...css, // Mesma coisa que fontSize: 12px, color: `#FFF`
+   // }
+
+   // Async/Await
+   
+   // Modelo antigo
+   // api.get(`/user/CadeOLink`)
+   //    .then(response => {
+   //       api.get(`/usersd/endereçoes/${response.id}`)
+   //       .then((responseEndereço => {
+   //       }).catch(err => {}))
+   //       })
+
+   // Modelo novo
+   // const buscaUsuarioEEndereco = async () => {
+   //    try{
+   //       const user = await api.get(`/user/CadeOLink`);
+   //       console.log(`Sucesso`) // Esse console só é executado quando o await for concluído
+   //       const enderecos = await  api.get(`/usersd/endereçoes/${response.id}`);   
+   //    } catch (err){
+   //       console.log(err)
+   //    }
+   // }
